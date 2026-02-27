@@ -1,0 +1,32 @@
+/* App-wide styles */
+.App {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Smooth transitions */
+* {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Global link styles */
+a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* Prevent double tap delay on mobile */
+@media (pointer: coarse) {
+  button,
+  input,
+  a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  }
+}
